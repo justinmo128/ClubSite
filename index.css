@@ -1,0 +1,122 @@
+html {
+  background: rgb(15, 16, 27) url(img/bg.png) no-repeat fixed center center;
+  background-size: cover;
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+body {
+  color: black;
+  margin: auto;
+  width: 100%;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+img {
+  width: 600px;
+}
+
+hr {
+  width: 300px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0;
+}
+
+#navibox {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 70px;
+  padding: 0 10px 25px;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+  text-align: right;
+}
+
+#title {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.navilink {
+  margin: 25px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+#currentpage {
+  text-decoration: underline;
+}
+
+#pagelink {
+  color: black;
+  text-decoration: none;
+}
+
+#pagelink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content {
+  width: 85%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'menu main main main right right'
+  'menu footer footer footer footer footer';
+  padding: 10px;
+}
+
+.grid > div {
+  padding: 20px 0;
+}
+
+.headingmain {
+  width: 100%;
+  grid-area: header;
+}
+
+.introtext {
+  grid-area: main;
+}
+
+.discordbox {
+  float: right;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  width: 350px;
+  height: 500px;
+  grid-area: right;
+}
