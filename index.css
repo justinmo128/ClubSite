@@ -1,5 +1,5 @@
 html {
-  background: rgb(15, 16, 27) url(img/bg.png) no-repeat fixed center center;
+  background: rgb(15, 16, 27) no-repeat fixed center center;
   background-size: cover;
   font-family: 'Roboto', 'Arial', sans-serif;
 }
@@ -8,20 +8,6 @@ body {
   color: black;
   margin: auto;
   width: 100%;
-}
-
-p {
-  font-size: 16px;
-  margin-top: 10px;
-  font-style: normal;
-}
-
-img {
-  width: 600px;
-}
-
-hr {
-  width: 300px;
 }
 
 h1 {
@@ -34,56 +20,68 @@ h2 {
   margin: 0px;
 }
 
-h3 {
-  font-size: 40px;
-  margin: 0;
+p {
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-#navibox {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  height: 70px;
-  padding: 0 10px 25px;
+.navi {
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  height: 64px;
+  padding: 0 30px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  display: table;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(128, 128, 180), rgb(163, 46, 163), rgb(128, 128, 180)) 1 round;
+  border-width: 0 0  2px 0;
 }
 
-.floatleft {
-  float: left;
-}
-
-.floatright {
-  float: right;
-  text-align: right;
-}
-
-#title {
+.title {
   font-size: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.navilinkbox {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: right;
+  padding-right: 60px;
 }
 
 .navilink {
-  margin: 25px;
-  padding-top: 10px;
-  font-size: 20px;
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
 }
 
-#currentpage {
-  text-decoration: underline;
+.navibutton {
+  font-family: 'Roboto Flex';
+  background-color: rgb(0, 0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px 15px;
+  margin: 0;
+  transition: 0.3s;
+  color: #ffffff;
 }
 
-#pagelink {
-  color: black;
-  text-decoration: none;
-}
-
-#pagelink:hover {
-  text-decoration: underline;
+.navibutton:hover {
   cursor: pointer;
+  background-color: rgb(100, 100, 100, 0.7);
+}
+
+.active {
+  background-color: rgba(160, 46, 253, 0.4);
 }
 
 .content {
   width: 85%;
-  margin: 10px auto;
+  margin: 100px auto 10px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
@@ -116,7 +114,7 @@ h3 {
   text-align: right;
   margin-left: auto;
   margin-right: 0;
-  width: 350px;
+  width: 375px;
   height: 500px;
   grid-area: right;
 }
