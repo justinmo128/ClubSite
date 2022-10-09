@@ -23,7 +23,6 @@
 
 .navilinkbox {
     text-align: right;
-    padding-right: 60px;
 }
 
 .navilink {
@@ -46,8 +45,4 @@
 .navilink button:hover {
     cursor: pointer;
     background-color: rgb(100, 100, 100, 0.7);
-}
-
-.active {
-    background-color: rgba(160, 46, 253, 0.4);
 }

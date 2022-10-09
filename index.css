@@ -17,7 +17,7 @@ h1 {
 h2 {
   font-size: 25px;
   text-align: center;
-  margin: 0px;
+  margin: 0 0 10px;
 }
 
 p {
@@ -37,9 +37,13 @@ a:visited {
   color: rgb(243, 87, 243);
 }
 
+.center {
+  text-align: center;
+}
+
 .content {
   min-width: 400px;
-  max-width: 75%;
+  max-width: 80%;
   margin: 100px auto 10px;
   padding: 10px;
   border-radius: 10px;
@@ -49,13 +53,44 @@ a:visited {
 
 .flex-container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .flex-container > div {
   margin: 10px;
 }
 
+.quotes {
+  padding: 0 70px;
+  text-align: center;
+}
+
+.vidcontainer {
+  display: flex;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  width: 50%;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 900px) {/*When screen size is below 900px*/
+  .vidcontainer{/*Make the form and map stack over each other*/
+      flex-direction: column;
+      /*flex-direction: column-reverse;*//* If you want them to stack the other way around*/ 
+  }
+  .responsive-iframe {
+      width: 100%;/*Make iframes take up entire screen since they are no longer next to each other*/
+  }
+}
+
+@media (max-width: 1100px) {
+  .content {
+    max-width: 90%;
+  }
+}
 
 @media (max-width: 900px) {
   .content {
@@ -69,6 +104,6 @@ a:visited {
     background-color: rgb(44, 44, 48);
   }
   .flex-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
