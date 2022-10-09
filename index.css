@@ -87,7 +87,7 @@ hr {
 
 .naviicon {
   display: none;
-  padding: 15px;
+  padding: 15px 17px;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
