@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 16px;
