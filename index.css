@@ -54,10 +54,6 @@ hr {
   height: auto;
 }
 
-.blanklogo {
-  display: none;
-}
-
 .navilinkbox {
   text-align: right;
   padding-right: 60px;
@@ -96,17 +92,14 @@ hr {
 
 /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 880px) {
-  .navi  {
-    padding-top: 20px;
-  }
-  .title {
-    float: left;
-  }
   .navilinkbox a.naviicon {
     display: inline;
   }
   .navilinkbox a {
     display: none;
+  }
+  .navilinkbox {
+    padding-top: 10px;
   }
 }
 
@@ -118,9 +111,8 @@ hr {
   .navilinkbox.responsive a {
     display: inline;
   }
-  .navi.responsive {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .navilinkbox.responsive {
+    padding-top: 0;
   }
 }
 
