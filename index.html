@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="desktopnav.css">
     <link rel="stylesheet" href="mobilenav.css">
+    <link rel="stylesheet" href="carousel.css">
     <!-- Stylesheet for menu icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,17 +53,55 @@
             While this is a fairly lenient club, we do ask you to have respectful behaviour, good sportsmanship, as well as integrity. This club is for fun, <strong>DO NOT</strong> ruin it for others!<br><br>
             Most of our annoucements can be found in our <a href="https://discord.gg/ydxYqvW5b6" target="_blank">Discord server</a> or <a href="" target="_blank">Google Classroom</a> (not yet in existence).<br><br>
             The selection of which game shall be played each week will be decided by a vote on this <a href="https://tenor.com/view/3d-saul-saul-goodman-adamghik-gif-23876766" target="_blank">Google Form</a>.<br><br>
-            The club is led by Justin Mo, Oliver Lo, and Guangchen Wang, and was originally conceived on October 7th, 2022 as "EPIC Part Video Games for people with tech devices".
+            The club is led by Justin Mo, Oliver Lo, and Guangchen Wang, and was originally conceived on October 7th, 2022 as "EPIC Party Video Games for people with tech devices".<br><br>
+            Special thanks to Elise Hong, for helping with the promotional slide and logo; and Aarnav Gupta and Kyujin Song for helping conceptualize our club.
           </p>
         </div>
       </div>
       <hr />
       <div>
         <h2>Intro Video</h2>
+        <div style="text-align: center;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4y5VyVeD_wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
       <hr />
       <div class="carousel">
         <h2>Highlights</h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/img1.png" style="width:100%">
+            <div class="text">Business Now. Bank Later.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/img2.png" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/img3.png" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
     </div>
   </body>
