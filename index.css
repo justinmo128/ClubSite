@@ -66,23 +66,9 @@ a:visited {
   text-align: center;
 }
 
-.vidcontainer {
-  display: flex;
-}
-
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
-  width: 50%;
-  margin: 10px;
-}
-
-@media only screen and (max-width: 900px) {/*When screen size is below 900px*/
-  .vidcontainer{/*Make the form and map stack over each other*/
-      flex-direction: column;
-      /*flex-direction: column-reverse;*//* If you want them to stack the other way around*/ 
-  }
+@media only screen and (max-width: 630px) {/*When screen size is below 900px*/
   .responsive-iframe {
-      width: 100%;/*Make iframes take up entire screen since they are no longer next to each other*/
+    width: 100%;
   }
 }
 
