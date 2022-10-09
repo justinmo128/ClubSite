@@ -11,18 +11,40 @@
   </head>
 
   <body>
-    <nav>
-      <div class="navi">
-        <div class="title"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club" height="60" width="485" style="vertical-align: middle"/></div>
-        <div class="navilinkbox">
-          <ul>
-            <li class="navilink"><a href="index.html"><button class="navibutton active">Home</button></a></li>
-            <li class="navilink"><a href="https://discord.gg/ydxYqvW5b6"><button class="navibutton">Discord</button></a></li>
-            <li class="navilink"><a><button class="navibutton">Google Classroom</button></a></li>
-          </ul>
-        </div>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="desktopnav.css">
+    <link rel="stylesheet" href="mobilenav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MOBILE NAVIGATION -->
+    <div class="topnav" id="myTopnav">
+      <img src="img/logoimgmobile.png" alt="Harry Ainlay's Party Video Games Club"/>
+      <a href="index.html" class="active">Home</a>
+      <a href="https://discord.gg/ydxYqvW5b6">Discord</a>
+      <a>Google Classroom</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- DESKTOP NAVIGATION -->
+    <div class="desktopnavi">
+      <div class="title"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club" class="logoimg"/></div>
+      <div class="navilinkbox">
+        <ul>
+          <li class="navilink"><a href="index.html"><button class="navibutton buttonactive">Home</button></a></li>
+          <li class="navilink"><a href="https://discord.gg/ydxYqvW5b6"><button class="navibutton">Discord</button></a></li>
+          <li class="navilink"><a><button class="navibutton">Google Classroom</button></a></li>
       </div>
-    </nav>
+    </div>
+    <!-- CONTENT -->
     <div class="content" style="font-size:25px; text-align:center">
         <b><i>404</i>: That's an error.<br>
         The page you are trying to navigate to doesn't exist.<b></b>

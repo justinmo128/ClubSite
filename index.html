@@ -4,6 +4,8 @@
     <title>Ainlay Party Video Games Club</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="desktopnav.css">
+    <link rel="stylesheet" href="mobilenav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
@@ -13,38 +15,32 @@
 
   <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <nav>
-      <div class="navi" id="toppernav">
-        <div class="title"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club" class="logoimg"/></div>
-        <div class="navilinkbox" id="topnav">
-          <ul>
-            <li class="navilink"><a href="index.html"><button class="navibutton active">Home</button></a></li>
-            <li class="navilink"><a href="https://discord.gg/ydxYqvW5b6"><button class="navibutton">Discord</button></a></li>
-            <li class="navilink"><a><button class="navibutton">Google Classroom</button></a></li>
-            <li class="navilink"><div style="display: table-cell">
-              <a href="javascript:void(0);" class="naviicon navibutton" id="naviicon">
-                <i class="fa fa-bars" style="color:white"></i>
-              </a>
-            </div></li>
-        </div>
+    <!-- MOBILE NAVIGATION -->
+    <div class="topnav" id="myTopnav">
+      <img src="img/logoimgmobile.png" alt="Harry Ainlay's Party Video Games Club"/>
+      <a href="index.html" class="active">Home</a>
+      <a href="https://discord.gg/ydxYqvW5b6">Discord</a>
+      <a>Google Classroom</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- DESKTOP NAVIGATION -->
+    <div class="desktopnavi">
+      <div class="title"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club" class="logoimg"/></div>
+      <div class="navilinkbox">
+        <ul>
+          <li class="navilink"><a href="index.html"><button class="navibutton buttonactive">Home</button></a></li>
+          <li class="navilink"><a href="https://discord.gg/ydxYqvW5b6"><button class="navibutton">Discord</button></a></li>
+          <li class="navilink"><a><button class="navibutton">Google Classroom</button></a></li>
       </div>
-    </nav>
+    </div>
+    <!-- CONTENT -->
     <div class="content">
       <h2 style="padding-top:15px">Welcome to the Ainlay Party Video Games Club website!</h2>
       <hr />
-      <!-- <div class="grid">
-        <div class="introtext">
-          <p>
-            This club is about playing party video games, like Super Smash Bros. Ultimate, the Jackbox Party Packs, Gartic Phone, skribbl.io, and more! It occurs every Wednesday at lunch. We hope to see you there!<br><br>
-            The club is led by Justin Mo, Oliver Lo, and Guangchen Wang, and was conceptualized on October 7th, 2022.
-          </p>
-        </div>
-        <div class="discordbox">
-          <iframe src="https://discord.com/widget?id=1028390909068451920&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-      </div> -->
       <div class="flex-container">
-        <div class="discordbox">
+        <div style="text-align: center">
           <iframe src="https://discord.com/widget?id=1028390909068451920&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
         <div class="introtext">
