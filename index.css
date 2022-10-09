@@ -140,16 +140,25 @@ hr {
   padding: 20px 0;
 }
 
-.headingmain {
-  width: 100%;
-  grid-area: header;
-}
-
 .introtext {
   grid-area: main;
 }
 
 .discordbox {
-  grid-area: right;
-  float: right;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-container > div {
+  margin: 10px;
+}
+
+@media (max-width: 900px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
