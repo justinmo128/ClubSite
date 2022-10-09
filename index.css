@@ -110,4 +110,10 @@ p {
 
 .discordbox {
   grid-area: right;
+  float: right;
+}
+
+.logo {
+  grid-area: main;
+  margin-top: 375px;
 }
