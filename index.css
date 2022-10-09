@@ -25,6 +25,10 @@ p {
   margin-top: 10px;
 }
 
+hr {
+  width: 50%;
+}
+
 .navi {
   position: fixed;
   top: 0;
@@ -111,9 +115,4 @@ p {
 .discordbox {
   grid-area: right;
   float: right;
-}
-
-.logo {
-  grid-area: main;
-  margin-top: 375px;
 }
