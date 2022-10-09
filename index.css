@@ -43,9 +43,14 @@ hr {
 }
 
 .title {
-  font-size: 30px;
   vertical-align: middle;
   display: table-cell;
+}
+
+.logoimg {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
 
 .navilinkbox {
@@ -77,6 +82,34 @@ hr {
 
 .active {
   background-color: rgba(160, 46, 253, 0.4);
+}
+
+.naviicon {
+  display: none;
+  padding: 15px;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 880px) {
+  .title {
+    display: inline;
+  }
+  .navilinkbox a.naviicon {
+    display: block;
+  }
+  .navilinkbox a {
+    display: none;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 880px) {
+  .title {
+    display: none;
+  }
+  .navilinkbox.responsive a {
+    display: inline;
+  }
 }
 
 .content {
