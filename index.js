@@ -8,4 +8,10 @@ function myFunction() {
     } else {
       x.className = "navilinkbox";
     }
+    var  y = document.getElementById("toppernav");
+    if (y.className === "navi") {
+        y.className += " responsive";
+    } else {
+        y.className = "navi";
+    }
   }
