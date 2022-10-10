@@ -43,6 +43,12 @@ a:visited {
   color: rgb(243, 87, 243);
 }
 
+.imgicon {
+  max-width: 60px;
+  padding-right: 4px;
+  padding-bottom: 10px;
+}
+
 .center {
   text-align: center;
 }
