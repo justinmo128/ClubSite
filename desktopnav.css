@@ -7,7 +7,7 @@
     padding: 10px 10px 0;
     background-color: rgb(24, 24, 24);
     border-style: solid;
-    border-image: linear-gradient(to right, rgb(128, 128, 180), rgb(163, 46, 163), rgb(128, 128, 180)) 1 round;
+    border-image: linear-gradient(to right, #1D2266, #BD54F2, #1D2266) 1 round;
     border-width: 0 0 2px 0;
     display: flex;
     flex-flow: row wrap;
