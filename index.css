@@ -40,7 +40,7 @@ a {
 }
 
 a:visited {
-  color: #BD54F2
+  color: #c979f1
 }
 
 .imgicon {
@@ -73,7 +73,7 @@ a:visited {
   margin: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .content {
     max-width: 100%;
     border-radius: 0px;
@@ -84,14 +84,22 @@ a:visited {
   html {
     background-color: rgb(44, 44, 48);
   }
+}
+
+@media (max-width: 850px) {
   .flex-container {
     flex-direction: column-reverse;
   }
 }
 
 .quotes {
-  padding: 0 70px;
+  padding: 0 35px;
   text-align: center;
+  justify-content: center;
+}
+
+.quotes > div {
+  flex: 1 1 0px
 }
 
 .slideshow {
