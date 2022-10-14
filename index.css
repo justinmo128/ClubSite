@@ -96,9 +96,11 @@ a:visited {
   display: flex;
   text-align: center;
   flex-flow: column wrap;
+  align-items: center;
 }
 
 .nextgame {
+  min-width: 350px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
