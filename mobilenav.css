@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     min-width: 100%;
-    padding: 10px 10px 0;
+    padding: 5px 10px 0;
     background-color: rgb(24, 24, 24);
     border-style: solid;
     border-image: linear-gradient(to right, #1D2266, #BD54F2, #1D2266) 1 round;
@@ -10,11 +10,12 @@
     display: none;
     flex-flow: row wrap;
     align-items: center;
+    z-index: 123123123;
 }
 
 /* Changes desktop navigation to mobile navigation */
 @media screen and (max-width: 850px) {
-    .desktopnavi {
+    .bigboy {
         display: none;
     }
     .mobilenavi {
@@ -47,7 +48,7 @@
 }
 
 .mobile-navibuttonbox {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     padding-right: 0;
 }
 

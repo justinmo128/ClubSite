@@ -32,7 +32,7 @@ p {
 }
 
 hr {
-  width: 50%;
+  width: 80%;
 }
 
 a {
@@ -90,6 +90,70 @@ a:visited {
   .flex-container {
     flex-direction: column-reverse;
   }
+}
+
+.bigbuttons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+}
+
+.nextgame {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  /* border-image: linear-gradient(to right, #8734b1, #1D2266) 1 round; */
+  border-color: #b249e7;
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.bigboybutton {
+  width: 350px;
+  height: 80px;
+  margin-bottom: 5px;
+  font-family: 'Poppins';
+  background-image: linear-gradient(to right, #4FC82F, #19B14E);
+  color: rgba(255, 255, 255, 0.7);
+  border-width: 0;
+  border-radius: 2px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.bigboybutton:hover {
+  background-image: linear-gradient(to right, #70D61D, #19B14E);
+  color: white;
+  cursor: pointer;
+}
+
+.bigboybutton > div > img {
+  opacity: 0.7;
+}
+
+.bigboybutton:hover > div > img {
+  opacity: 1;
+}
+
+.discordbutton {
+  background-image: linear-gradient(to right, #399BED, #5865F2);
+}
+
+.discordbutton:hover {
+  background-image: linear-gradient(to right, #47BFFF, #5865F2);
+}
+
+.formbutton {
+  background-image: linear-gradient(to right, #7627BB, #4F23A0);
+}
+
+.formbutton:hover {
+  background-image: linear-gradient(to right, #8455DB, #4F23A0);
 }
 
 .quotes {
