@@ -1,0 +1,61 @@
+/* Replace video and slideshow with medium versions */
+@media (max-width: 1450px) {
+    .vid-large, .slideshow-large {
+      display: none;
+    }
+    .vid-med, .slideshow-med {
+      display: block;
+    }
+}
+
+/* Change video and slideshow to be stacked on top of each other */
+@media (max-width: 1250px) {
+    .slideshow {
+        flex-direction: column;
+    }
+}
+
+/* Use top navigation bar instead of navigation rail */
+@media (max-width: 970px) {
+    .desktopnavi {
+        display: none;
+    }
+    .mobilenavi, .mobilemenu {
+        display: flex;
+    }
+    .content {
+        min-width: 0;
+        max-width: 100%;
+        border-radius: 0px;
+        margin: 70px auto 0;
+        padding: 0 10px 75px 10px;
+        background-color: #25232A;
+    }
+}
+
+/* Make large buttons stack on top of paragraphs, remove cards */
+@media (max-width: 850px) {
+    .flex-container {
+        flex-direction: column-reverse;
+    }
+    .card {
+        background-color: rgba(0,0,0,0);
+        z-index: 0;
+    }
+}
+
+/* Use shortened logo in navigation */
+@media screen and (max-width: 752px) {
+    .titlemed {display: none;}
+    .titlesmall {display: block;}
+}
+
+/* Replace video and slideshow with small versions */
+@media (max-width: 535px) {
+    .vid-med, .slideshow-med {
+        display: none;
+    }
+    .vid-small, .slideshow-small {
+        display: block;
+    }
+}

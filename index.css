@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap');
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 html {
-  background: rgb(20, 20, 24) no-repeat fixed center center;
-  background-size: cover;
+  background-color: #1F1F1F;
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
@@ -29,6 +30,7 @@ h2 {
 p {
   font-size: 16px;
   margin-top: 10px;
+  color: inherit;
 }
 
 hr {
@@ -43,24 +45,17 @@ a:visited {
   color: #c979f1
 }
 
-.imgicon {
-  width: 60px;
-  padding-right: 4px;
-  padding-bottom: 10px;
-}
-
 .center {
   text-align: center;
 }
 
 .content {
-  min-width: 400px;
-  max-width: 1000px;
-  margin: 100px auto 10px;
-  padding: 10px 10px 40px;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255, 0.1);
-  color: rgb(230, 230, 230);
+  min-width: 960px;
+  max-width: 1280px;
+  padding: 20px 10px 40px 130px;
+  background-color: inherit;
+  color: #E6E1E5;
+  margin: auto;
 }
 
 .flex-container {
@@ -69,75 +64,60 @@ a:visited {
   justify-content: space-between;
 }
 
-.flex-container > div {
-  margin: 10px;
+.card {
+  background-color: #25232A;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 100;
 }
 
-@media (max-width: 1000px) {
-  .content {
-    max-width: 100%;
-    border-radius: 0px;
-    margin: 70px auto 0;
-    padding-bottom: 75px;
-    background-color: rgb(44, 44, 48);
-  }
-  html {
-    background-color: rgb(44, 44, 48);
-  }
+.paragraphs {
+  padding: 5px 20px;
 }
 
-@media (max-width: 850px) {
-  .flex-container {
-    flex-direction: column-reverse;
-  }
-}
-
-.bigbuttons {
+.bigbuttonbox {
   display: flex;
   text-align: center;
   flex-flow: column wrap;
   align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 .nextgame {
-  min-width: 350px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-content: center;
-  /* border-image: linear-gradient(to right, #8734b1, #1D2266) 1 round; */
-  border-color: #b249e7;
-  border-style: solid;
-  border-width: 0 0 3px 0;
-  border-radius: 4px;
   margin-bottom: 4px;
 }
 
-.bigboybutton {
+.bigbutton {
   width: 350px;
   height: 80px;
   margin-bottom: 5px;
-  font-family: 'Poppins';
   background-image: linear-gradient(to right, #4FC82F, #19B14E);
   color: rgba(255, 255, 255, 0.7);
   border-width: 0;
-  border-radius: 2px;
+  border-radius: 10px;
+  font-family: 'Poppins';
   font-size: 20px;
   transition: 0.2s;
 }
 
-.bigboybutton:hover {
+.bigbutton:hover {
   background-image: linear-gradient(to right, #70D61D, #19B14E);
   color: white;
   cursor: pointer;
 }
 
-.bigboybutton > div > img {
-  opacity: 0.7;
-}
-
-.bigboybutton:hover > div > img {
-  opacity: 1;
+.bigbutton > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .discordbutton {
@@ -178,26 +158,47 @@ a:visited {
   max-width: 100%;
 }
 
-@media (max-width: 1450px) {
-  .vid-large, .slideshow-large {
-    display: none;
-  }
-  .vid-med, .slideshow-med {
-    display: block;
-  }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
 }
 
-@media (max-width: 1250px) {
-  .slideshow {
-    flex-direction: column;
-  }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-@media (max-width: 535px) {
-  .vid-med, .slideshow-med {
-    display: none;
-  }
-  .vid-small, .slideshow-small {
-    display: block;
-  }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }

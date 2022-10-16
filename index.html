@@ -18,11 +18,13 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="desktopnav.css">
     <link rel="stylesheet" href="mobilenav.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="scrollbar.css">
-    <!-- Stylesheet for menu icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Various icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/877ff9a971.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width">
-    <script defer src="index.js"></script>
   </head>
 
   <body>
@@ -30,110 +32,139 @@
     <div class="mobilenavi">
       <div class="titlemed"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
       <div class="titlesmall"><img src="img/logoimgsupersmall.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-      <div class="mobile-navibuttonbox"><button class="mobile-navibutton hamburger" id="navibutton"><i class="fa fa-bars"></i></button></div>
-      <div class="openmenu" id="openmenu">      
-        <div class="mobile-navibuttonbox"><a href="index.html"><button class="mobile-navibutton" style="background-color: #8734b1">Home</button></a></div>
-        <div class="mobile-navibuttonbox"><a href="https://discord.gg/ydxYqvW5b6" target="_blank"><button class="mobile-navibutton">Discord</button></a></div>
-        <div class="mobile-navibuttonbox"><a href="https://classroom.google.com" target="_blank"><button class="mobile-navibutton">Google Classroom</button></a></div>
+      <div class="buttonsnew">
+        <div><a href="index.html">
+          <button class="active mobile-navibutton" title="Home">
+            <div><span class="material-symbols-outlined">home</span></div>
+          </button>
+        </a></div>
+        <div><a href="https://discord.gg/ydxYqvW5b6" target="_blank">
+          <button class="mobile-navibutton" title="Discord">
+            <div><i class="fa-brands fa-discord"></i></div>
+          </button>
+        </a></div>
+        <div><a href="saul.html">
+          <button class="mobile-navibutton" title="Google Classroom">
+            <div><span class="material-symbols-outlined">groups</span></div>
+          </button>
+        </a></div>
+        <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
+          <button class="mobile-navibutton" title="Google Form">
+            <div><span class="material-icons">list</span></div>
+          </button>
+        </a></div>
       </div>
     </div>
-    <!-- DESKTOP NAVIGATION -->
-    <div class="bigboy">
+    <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+      <!-- DESKTOP NAVIGATION -->
       <div class="desktopnavi">
-        <div class="title"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-        <div class="navibuttonbox"><a href="index.html"><button class="navibutton" style="background-color: #8734b1">Home</button></a></div>
-        <div class="navibuttonbox"><a href="https://discord.gg/ydxYqvW5b6" target="_blank"><button class="navibutton">Discord</button></a></div>
-        <div class="navibuttonbox"><a href="saul.html"><button class="navibutton">Google Classroom</button></a></div>
+        <div><img src="img/logoiconnew.png" alt="Harry Ainlay's Party Video Games Club" style="width: 88px; margin-bottom: 10px;"/></div>
+        <div class="navibuttonbox">
+          <a href="index.html" class="navilink">
+            <button class="active navibutton">
+              <div><span class="material-symbols-outlined">home</span></div>
+            </button>
+            <p>Home</p>
+          </a>
+          <a href="index.html" class="navilink">
+            <button class="navibutton">
+              <div><i class="fa-brands fa-discord"></i></div>
+            </button>
+            <p>Discord</p>
+          </a>
+          <a href="index.html" class="navilink">
+            <button class="navibutton">
+              <div><span class="material-symbols-outlined">groups</span></div>
+            </button>
+            <p>Classroom</p>
+          </a>
+          <a href="index.html" class="navilink">
+            <button class="navibutton">
+              <div><span class="material-icons">list</span></div>
+            </button>
+            <p>Form</p>
+          </a>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <h2 style="padding-top:15px">Welcome to the Ainlay Party Video Games Club website!</h2>
+        <hr />
+        <div class="flex-container">
+          <!-- Main Paragraphs -->
+          <div class="paragraphs card">
+            <p>
+              Are you bored of your classes? Need a break from school? Well, rejoice! This club is about playing party video games, like Super Smash Bros. Ultimate, the Jackbox Party Packs, Gartic Phone, skribbl.io, and more! It occurs every <b>Wednesday at lunch in room 344</b>.<br><br>
+              While not a requirement to be at the club, anyone who wishes to participate in any games should bring their own technology. For the most part, a phone will suffice, but a laptop or Chromebook are often better (especially for Gartic Phone). At times we will play Super Smash Bros. Ultimate in which it will be <strong>HIGHLY</strong> recommended that members bring their own controllers (sometimes extra controllers are provided, but that's not a guarantee!).<br><br> 
+              While this is a fairly lenient club, we do ask you to have respectful behaviour, good sportsmanship, as well as integrity. This club is for fun, <strong>DO NOT</strong> ruin it for others!<br><br>
+              Most of our annoucements can be found in our Discord server or Google Classroom.<br><br>
+              The selection of which game shall be played each week will be decided by a vote on a Google Form.<br><br>
+              The club is led by Justin Mo, Oliver Lo, and Guangchen Wang, and was originally conceptualized on October 7th, 2022 as "EPIC Party Video Games for people with tech devices".<br><br>
+              Special thanks to Elise Hong, for helping with the <a href="https://docs.google.com/presentation/d/16L7xwYiU6Vwo8bJ3hdS10J1hSFcpkH8xDHlwI6vVDSg/edit?usp=sharing" target="_blank">promotional slide</a> and logo; and Aarnav Gupta and Kyujin Song for helping conceptualize our club as well as Mrs. Koehler for letting us use her room and being our teacher advisor.<br><br>
+              We hope to see you there!
+            </p>
+          </div>
+          <!-- Important stuff or smthn -->
+          <div class="bigbuttonbox card">
+            <div class="nextgame">
+              <h2 style="margin: 0;">THE NEXT GAME IS:</h2>
+              <h2 style="margin: 0;">Unknown</h2>
+              <p style="margin-top: 0; color: rgba(255,255,255,0.6)">
+              (Based on current Form result) 
+              </p>
+            </div>
+            <div><a href="https://discord.gg/ydxYqvW5b6" target="_blank">
+              <button class="bigbutton discordbutton"><div>
+                <i class="fa-brands fa-discord" style="font-size: 20px; padding-right: 5px;"></i>
+                DISCORD SERVER
+              </div></button>
+            </a></div>
+            <div><a href="saul.html">
+              <button class="bigbutton"><div>
+                <span class="material-symbols-outlined" style="padding-right: 5px;">groups</span>
+                GOOGLE CLASSROOM*
+              </div></button>
+            </a></div>
+            <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
+                <button class="bigbutton formbutton"><div>
+                    <span class="material-icons" style="padding-right: 5px">list</span>
+                    VOTE FOR THE NEXT GAME**
+                </div></button>
+            </a></div>
+            <p style="margin-top: 0; color: rgba(255,255,255,0.6)">
+              *(Does not exist yet)<br>
+              **(EPSB account required)
+            </p>
+          </div>
+        </div>
+        <!-- Quotes -->
+        <div class="flex-container quotes card">
+          <div class="quotes"><p>"better scramble like an egg, before you get folded like an omelette"<br><br>
+            -Justin Mo</p></div>
+          <div class="quotes"><p>"you guys ever get 2 cents... call it 50 cents"<br><br>
+              -Guangchen Wang
+            </p></div>
+          <div class="quotes"><p>
+              "Half of these people ain't even real people, bro. Watch this..."<br><br>
+              -Oliver Lo
+          </p></div>
+        </div>
+
+        <div class="slideshow card">
+        <!-- <div class="center">
+          <h2>Intro Video</h2>
+          <iframe class="vid-small" width="480" height="270" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-iframe"></iframe>
+          <iframe class="vid-med" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-iframe"></iframe>
+          <iframe class="vid-large" width="667" height="375" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-iframe"></iframe>
+        </div> -->
+
+        <div class="center card">
+          <h2>Highlights</h2>
+          <iframe class="slideshow-small" src="https://docs.google.com/presentation/d/e/2PACX-1vSKTrm9MsRtmlu4sFCd0sAohhOcnWgQBdD6fFkWKVYpOWiScQoNe1Q4Md1gXVvksPklUTuu61LbYKzM/embed" frameborder="0" width="480" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <iframe class="slideshow-med" src="https://docs.google.com/presentation/d/e/2PACX-1vSKTrm9MsRtmlu4sFCd0sAohhOcnWgQBdD6fFkWKVYpOWiScQoNe1Q4Md1gXVvksPklUTuu61LbYKzM/embed" frameborder="0" width="504" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <iframe class="slideshow-large" src="https://docs.google.com/presentation/d/e/2PACX-1vSKTrm9MsRtmlu4sFCd0sAohhOcnWgQBdD6fFkWKVYpOWiScQoNe1Q4Md1gXVvksPklUTuu61LbYKzM/embed" frameborder="0" width="600" height="375" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
       </div>
     </div>
-    <!-- CONTENT -->
-    <div class="content">
-      <h2 style="padding-top:15px">Welcome to the Ainlay Party Video Games Club website!</h2>
-      <hr />
-      <div class="flex-container">
-        <!-- Main Paragraphs -->
-        <div>
-          <p>
-            Are you bored of your classes? Need a break from school? Well, rejoice! This club is about playing party video games, like Super Smash Bros. Ultimate, the Jackbox Party Packs, Gartic Phone, skribbl.io, and more! It occurs every Wednesday at lunch in room 344.<br><br>
-            While not a requirement to be at the club, anyone who wishes to participate in any games should bring their own technology. For the most part, a phone will suffice, but a laptop or Chromebook are often better (especially for Gartic Phone). At times we will play Super Smash Bros. Ultimate in which it will be <strong>HIGHLY</strong> recommended that members bring their own controllers (sometimes extra controllers are provided, but that's not a guarantee!).<br><br> 
-            While this is a fairly lenient club, we do ask you to have respectful behaviour, good sportsmanship, as well as integrity. This club is for fun, <strong>DO NOT</strong> ruin it for others!<br><br>
-            Most of our annoucements can be found in our Discord server or Google Classroom.<br><br>
-            The selection of which game shall be played each week will be decided by a vote on a Google Form.<br><br>
-            The club is led by Justin Mo, Oliver Lo, and Guangchen Wang, and was originally conceptualized on October 7th, 2022 as "EPIC Party Video Games for people with tech devices".<br><br>
-            Special thanks to Elise Hong, for helping with the <a href="https://docs.google.com/presentation/d/16L7xwYiU6Vwo8bJ3hdS10J1hSFcpkH8xDHlwI6vVDSg/edit?usp=sharing" target="_blank">promotional slide</a> and logo; and Aarnav Gupta and Kyujin Song for helping conceptualize our club as well as Mrs. Koehler for letting us use her room and being our teacher advisor.<br><br>
-            We hope to see you there!
-          </p>
-        </div>
-        <!-- Important stuff or smthn -->
-        <div class="bigbuttons">
-          <div class="nextgame">
-            <h2 style="margin: 0;">THE NEXT GAME IS:</h2>
-            <h2 style="margin: 0;">Unknown</h2>
-          </div>
-          <div>
-            <a href="https://discord.gg/ydxYqvW5b6" target="_blank">
-              <button class="bigboybutton discordbutton">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                  <img src="img/discordlogo.png" style="padding-right: 8px; width: 30px;"/>
-                  DISCORD SERVER
-                </div>
-              </button>
-            </a>
-          </div>
-          <div>
-              <a href="saul.html">
-              <button class="bigboybutton">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                  <img src="img/googleclassroomlogo.png" style="padding-right: 8px; width:30px;"/>
-                  GOOGLE CLASSROOM*
-                </div>
-              </button>
-            </a>
-          </div>
-          <div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
-              <button class="bigboybutton formbutton">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                  <img src="img/formslogo.png" style="padding-right: 8px; width:30px;"/>
-                  VOTE FOR THE NEXT GAME**
-                </div>
-              </button>
-            </a>
-          </div>
-          <p style="margin-top: 0; color: rgba(255,255,255,0.6)">
-            *(Does not exist yet)<br>
-            **(EPSB account required)
-          </p>
-        </div>
-      </div>
-      <!-- Quotes -->
-      <div class="flex-container quotes">
-        <div class="quotes"><p>"better scramble like an egg, before you get folded like an omelette"<br><br>
-          -Justin Mo</p></div>
-        <div class="quotes"><p>"you guys ever get 2 cents... call it 50 cents"<br><br>
-            -Guangchen Wang
-          </p></div>
-        <div class="quotes"><p>
-            "Half of these people ain't even real people, bro. Watch this..."<br><br>
-            -Oliver Lo
-        </p></div>
-      </div>
-      <hr />
-
-      <div class="slideshow">
-      <!-- <div class="center">
-        <h2>Intro Video</h2>
-        <iframe class="vid-small" width="480" height="270" src="https://www.youtube.com/embed/4y5VyVeD_wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-iframe"></iframe>
-        <iframe class="vid-med" width="560" height="315" src="https://www.youtube.com/embed/4y5VyVeD_wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-iframe"></iframe>
-        <iframe class="vid-large" width="667" height="375" src="https://www.youtube.com/embed/4y5VyVeD_wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-iframe"></iframe>
-      </div> -->
-
-      <div class="center">
-        <h2>Highlights</h2>
-        <iframe class="slideshow-small" src="https://docs.google.com/presentation/d/e/2PACX-1vSKTrm9MsRtmlu4sFCd0sAohhOcnWgQBdD6fFkWKVYpOWiScQoNe1Q4Md1gXVvksPklUTuu61LbYKzM/embed" frameborder="0" width="480" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-        <iframe class="slideshow-med" src="https://docs.google.com/presentation/d/e/2PACX-1vSKTrm9MsRtmlu4sFCd0sAohhOcnWgQBdD6fFkWKVYpOWiScQoNe1Q4Md1gXVvksPklUTuu61LbYKzM/embed" frameborder="0" width="504" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-        <iframe class="slideshow-large" src="https://docs.google.com/presentation/d/e/2PACX-1vSKTrm9MsRtmlu4sFCd0sAohhOcnWgQBdD6fFkWKVYpOWiScQoNe1Q4Md1gXVvksPklUTuu61LbYKzM/embed" frameborder="0" width="600" height="375" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
-      </div>
   </body>
 </html>

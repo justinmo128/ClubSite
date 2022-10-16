@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     min-width: 100%;
-    padding: 5px 10px 0;
+    padding: 5px 10px 2px;
     background-color: rgb(24, 24, 24);
     border-style: solid;
     border-image: linear-gradient(to right, #1D2266, #BD54F2, #1D2266) 1 round;
@@ -10,17 +10,7 @@
     display: none;
     flex-flow: row wrap;
     align-items: center;
-    z-index: 123123123;
-}
-
-/* Changes desktop navigation to mobile navigation */
-@media screen and (max-width: 850px) {
-    .bigboy {
-        display: none;
-    }
-    .mobilenavi {
-        display: flex;
-    }
+    z-index: 1;
 }
 
 .titlesmall, .titlemed {
@@ -31,44 +21,39 @@
     display: none;
 }
 
-
-@media screen and (max-width: 575px) {
-    .titlemed {display: none;}
-    .titlesmall {display: block;}
-}
-
-.openmenu {
-    min-width: 100%;
-    justify-content: center;
-    display: none;
-}
-
-.opened {
+.buttonsnew {
+    padding-bottom: 5px;
     display: flex;
 }
 
-.mobile-navibuttonbox {
-    padding-bottom: 6px;
-    padding-right: 0;
+.buttonsnew > div {
+    margin-left: 10px;
 }
 
 .mobile-navibutton {
     font-family: 'Roboto Flex';
     background-color: rgb(0, 0, 0, 0);
     border: none;
-    font-size: 16px;
-    border-radius: 4px;
-    padding: 10px 15px;
-    margin: 2px;
+    font-size: 18px;
+    border-radius: 999px;
+    width: 50px;
+    height: 50px;
     transition: 0.3s;
-    color: #ffffff;
+    color: white;
 }
 
 .mobile-navibutton:hover {
     cursor: pointer;
-    background-color: rgb(100, 100, 100, 0.7);
+    background-color: #312F34;
 }
 
-.hamburger {
-    padding: 12px 15px;
+.mobile-navibutton > div {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.active, .active:hover {
+    background-color: #8734b1;
+    border-color: #8734b1;
 }
