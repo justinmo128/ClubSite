@@ -4,7 +4,7 @@
     .bigbutton {width: 280px;}
 }
 
-@media (min-width: 359px) {
+@media (min-width: 340px) {
     .bigbutton {width: 320px;}
 }
 
