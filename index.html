@@ -24,16 +24,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/877ff9a971.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
     <meta name="viewport" content="width=device-width">
   </head>
 
   <body>
     <!-- MOBILE NAVIGATION -->
     <div class="mobilenavi">
-      <div class="titlemed"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-      <div class="titlesmall"><img src="img/logoimgsupersmall.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-      <div class="titleicon"><img src="img/logoiconnew.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-      <div class="buttonsnew">
+      <div style="margin-right: 10px;"><a id="menubutton">
+        <button class="hamburger mobile-navibutton">
+          <div><span class="material-symbols-outlined">menu</span></div>
+        </button>
+      </a></div>
+      <div style="display: flex; align-items: center;">
+        <div class="titlemed"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
+        <div class="titlesmall"><img src="img/logoimgsupersmall.png" alt="Harry Ainlay's Party Video Games Club"/></div>
+        <div class="titleicon"><img src="img/logoiconnew.png"/></div>
+      </div>
+      <!-- <div class="buttonsnew">
         <div><a href="index.html">
           <button class="active mobile-navibutton" title="Home">
             <div><span class="material-symbols-outlined">home</span></div>
@@ -54,13 +62,40 @@
             <div><span class="material-icons">list</span></div>
           </button>
         </a></div>
+      </div> -->
+      <div class="mobilemenu" id="mobilemenu">
+        <a id="closemenubutton">
+          <button class="hamburger mobile-navibutton">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </a>
+        <a href="index.html">
+          <button class="active mobile-navibutton">
+            <span class="material-symbols-outlined">home</span>Home
+          </button>
+        </a>
+        <a href="https://discord.gg/ydxYqvW5b6" target="_blank" class="navilink">
+          <button class="mobile-navibutton">
+            <span class="fa-brands fa-discord" style="font-size: 18px;"></span>Discord
+          </button>
+        </a>
+        <a href="saul.html">
+          <button class="mobile-navibutton">
+            <span class="material-symbols-outlined">groups</span>Classroom
+          </button>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
+          <button class="mobile-navibutton">
+            <span class="material-icons">list</span>Google Form
+          </button>
+        </a>
       </div>
     </div>
     <div class="desktopbox">
       <!-- DESKTOP NAVIGATION -->
-      <div class="desktopnavi">
+      <div class="desktopnavi" id="desktopnavi">
         <div><img src="img/logoiconnew.png" alt="Harry Ainlay's Party Video Games Club" style="width: 80px; margin-bottom: 10px; border-radius: 50%"/></div>
-        <div class="navibuttonbox">
+        <div>
           <a href="index.html" class="navilink">
             <button class="active navibutton">
               <div><span class="material-symbols-outlined">home</span></div>
@@ -116,20 +151,22 @@
             </div>
             <div><a href="https://discord.gg/ydxYqvW5b6" target="_blank">
               <button class="bigbutton discordbutton"><div>
-                <i class="fa-brands fa-discord" style="font-size: 20px; padding-right: 5px;"></i>
+                <i class="fa-brands fa-discord" style="font-size: 20px; padding-right: 5px;"></i> 
                 DISCORD SERVER
               </div></button>
             </a></div>
             <div><a href="saul.html">
               <button class="bigbutton"><div>
                 <span class="material-symbols-outlined" style="padding-right: 5px;">groups</span>
-                GOOGLE CLASSROOM*
+                <span class="button-text-small">CLASSROOM*</span>
+                <span class="button-text-large">GOOGLE CLASSROOM*</span>
               </div></button>
             </a></div>
             <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
                 <button class="bigbutton formbutton"><div>
                     <span class="material-icons" style="padding-right: 5px">list</span>
-                    VOTE FOR THE NEXT GAME**
+                    <span class="button-text-small">NEXT GAME VOTE*</span>
+                    <span class="button-text-large">VOTE FOR THE NEXT GAME**</span>
                 </div></button>
             </a></div>
             <p style="margin-top: 0; color: rgba(255,255,255,0.6)">

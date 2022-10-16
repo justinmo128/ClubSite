@@ -1,16 +1,17 @@
-@media (min-width: 331px) {
-    .titleicon {display: block;}
-    .mobilenavi {justify-content: flex-start;}
+/* Display title icon, make buttons larger */
+@media (min-width: 340px) {
     .bigbutton {width: 300px;}
+    .button-text-small {display: none;}
+    .button-text-large {display: block;}
 }
 
+/* Make buttons larger */
 @media (min-width: 340px) {
     .bigbutton {width: 320px;}
 }
 
+/* Display title text, display cards */
 @media (min-width: 440px) {
-    .titlesmall {display: block;}
-    .titleicon {display: none;}
     .bigbutton {width: 350px;}
     .card {
         box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
