@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ainlay Party Video Games Club</title>
+    <title>Saul - Ainlay Party Video Games Club</title>
     <!-- Main Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32.png">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="desktopnav.css">
     <link rel="stylesheet" href="mobilenav.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="scrollbar.css">
     <!-- Various icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -31,25 +32,66 @@
     <div class="mobilenavi">
       <div class="titlemed"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
       <div class="titlesmall"><img src="img/logoimgsupersmall.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-      <div class="mobile-navibuttonbox"><button class="mobile-navibutton hamburger" id="navibutton"><i class="fa fa-bars"></i></button></div>
-      <div class="openmenu" id="openmenu">      
-        <div class="mobile-navibuttonbox"><a href="index.html"><button class="mobile-navibutton">Home</button></a></div>
-        <div class="mobile-navibuttonbox"><a href="https://discord.gg/ydxYqvW5b6" target="_blank"><button class="mobile-navibutton">Discord</button></a></div>
-        <div class="mobile-navibuttonbox"><a href="https://classroom.google.com" target="_blank"><button class="mobile-navibutton">Google Classroom</button></a></div>
+      <div class="buttonsnew">
+        <div><a href="index.html">
+          <button class="mobile-navibutton" title="Home">
+            <div><span class="material-symbols-outlined">home</span></div>
+          </button>
+        </a></div>
+        <div><a href="https://discord.gg/ydxYqvW5b6" target="_blank">
+          <button class="mobile-navibutton" title="Discord">
+            <div><i class="fa-brands fa-discord"></i></div>
+          </button>
+        </a></div>
+        <div><a href="saul.html">
+          <button class="mobile-navibutton" title="Google Classroom">
+            <div><span class="material-symbols-outlined">groups</span></div>
+          </button>
+        </a></div>
+        <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
+          <button class="mobile-navibutton" title="Google Form">
+            <div><span class="material-icons">list</span></div>
+          </button>
+        </a></div>
       </div>
     </div>
-    <!-- DESKTOP NAVIGATION -->
-    <div class="bigboy">
+    <div style="display: flex; flex-direction: row; justify-content: flex-end; align-items: center;">
+      <!-- DESKTOP NAVIGATION -->
       <div class="desktopnavi">
-        <div class="title"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-        <div class="navibuttonbox"><a href="index.html"><button class="navibutton">Home</button></a></div>
-        <div class="navibuttonbox"><a href="https://discord.gg/ydxYqvW5b6" target="_blank"><button class="navibutton">Discord</button></a></div>
-        <div class="navibuttonbox"><a href="saul.html"><button class="navibutton">Google Classroom</button></a></div>
+        <div><img src="img/logoiconnew.png" alt="Harry Ainlay's Party Video Games Club" style="width: 88px; margin-bottom: 10px;"/></div>
+        <div class="navibuttonbox">
+          <a href="index.html" class="navilink">
+            <button class="navibutton">
+              <div><span class="material-symbols-outlined">home</span></div>
+            </button>
+            <p>Home</p>
+          </a>
+          <a href="index.html" class="navilink">
+            <button class="navibutton">
+              <div><i class="fa-brands fa-discord"></i></div>
+            </button>
+            <p>Discord</p>
+          </a>
+          <a href="index.html" class="navilink">
+            <button class="navibutton">
+              <div><span class="material-symbols-outlined">groups</span></div>
+            </button>
+            <p>Classroom</p>
+          </a>
+          <a href="index.html" class="navilink">
+            <button class="navibutton">
+              <div><span class="material-icons">list</span></div>
+            </button>
+            <p>Form</p>
+          </a>
+        </div>
       </div>
-    </div>
-    <!-- CONTENT -->
-    <div class="content" style="display: flex; justify-content: center; align-items: center; padding: 25px;">
-      <img src="https://media.tenor.com/1y8zDc-ll-EAAAAd/3d-saul-saul-goodman.gif" alt="Saul Goodman" style="max-width: 100%; height: auto;">
+      <!-- CONTENT -->
+      <div class="content" style="font-size:25px; text-align:center; padding-top:100px;">
+        <div class="card" style="padding: 25px">
+          <img src="https://media.tenor.com/1y8zDc-ll-EAAAAd/3d-saul-saul-goodman.gif" alt="Saul Goodman" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
     </div>
   </body>
 </html>

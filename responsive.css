@@ -10,7 +10,7 @@
 
 /* Change video and slideshow to be stacked on top of each other */
 @media (max-width: 1250px) {
-    .slideshow {
+    .video-highlights {
         flex-direction: column;
     }
 }
@@ -29,7 +29,6 @@
         border-radius: 0px;
         margin: 70px auto 0;
         padding: 0 10px 75px 10px;
-        background-color: #25232A;
     }
 }
 
@@ -38,9 +37,8 @@
     .flex-container {
         flex-direction: column-reverse;
     }
-    .card {
-        background-color: rgba(0,0,0,0);
-        z-index: 0;
+    .bigbuttonbox {
+        margin-left: 0;
     }
 }
 
