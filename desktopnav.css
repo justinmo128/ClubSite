@@ -12,7 +12,7 @@
     border-image: linear-gradient(180deg, #1D2266, #BD54F2, #1D2266) 1 round;
     border-width: 0 2px 0 0;
     /* FLEXBOX */
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;

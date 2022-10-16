@@ -1,82 +1,82 @@
-/* Replace video and slideshow with medium versions */
-@media (max-width: 1450px) {
-    .vid-large, .slideshow-large {
-      display: none;
-    }
-    .vid-med, .slideshow-med {
-      display: block;
-    }
+@media (min-width: 331px) {
+    .titleicon {display: block;}
+    .mobilenavi {justify-content: flex-start;}
+    .bigbutton {width: 280px;}
 }
 
-/* Change video and slideshow to be stacked on top of each other */
-@media (max-width: 1250px) {
-    .slideshow {
-        flex-direction: column;
-    }
+@media (min-width: 359px) {
+    .bigbutton {width: 320px;}
 }
 
-/* Use top navigation bar instead of navigation rail */
-@media (max-width: 970px) {
-    .desktopnavi {
-        display: none;
-    }
-    .mobilenavi, .mobilemenu {
-        display: flex;
+@media (min-width: 440px) {
+    .titlesmall {display: block;}
+    .titleicon {display: none;}
+    .bigbutton {width: 350px;}
+    .card {
+        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
     }
     .content {
-        min-width: 0;
-        max-width: 100%;
-        border-radius: 0px;
-        margin: 70px auto 0;
+        background-color: #1F1F1F;
         padding: 20px 10px 0px 10px;
     }
 }
 
-/* Make large buttons stack on top of paragraphs, remove cards */
-@media (max-width: 850px) {
-    .flex-container {
-        flex-direction: column-reverse;
-    }
-    .bigbuttonbox {
-        margin-left: 0;
-    }
-}
-
-/* Use shortened logo in navigation */
-@media (max-width: 752px) {
-    .titlemed {display: none;}
-    .titlesmall {display: block;}
-}
-
-/* Replace video and slideshow with small versions */
-@media (max-width: 535px) {
+/* Replace video and slideshow with medium versions */
+@media (min-width: 535px) {
     .vid-med, .slideshow-med {
-        display: none;
-    }
-    .vid-small, .slideshow-small {
         display: block;
     }
+    .vid-small, .slideshow-small {
+        display: none;
+    }
 }
 
-@media (max-width: 440px) {
+/* Use longer logo in navigation */
+@media (min-width: 752px) {
+    .titlemed {display: block;}
     .titlesmall {display: none;}
-    .titleicon {display: block;}
-    .bigbutton {width: 320px;}
-    .card {
-        box-shadow: none;
-        padding: 0;
+}
+
+/* Make large buttons next to paragraphs */
+@media (min-width: 850px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    .bigbuttonbox {
+        margin-left: 10px;
+    }
+}
+
+/* Use navigation rail instead of top navigation bar */
+@media (min-width: 970px) {
+    .desktopnavi {
+        display: flex;
+    }
+    .mobilenavi, .mobilemenu {
+        display: none;
     }
     .content {
-        background-color: #25232A;
+        min-width: 960px;
+        max-width: 1280px;
+        border-radius: 0px;
+        margin: auto;
+        padding: 20px 10px 40px 130px;
     }
 }
 
-@media (max-width: 360px) {
-    .bigbutton {width: 280px;}
+/* Change video and slideshow to be shown next to each other */
+@media (min-width: 1250px) {
+    .video-highlights {
+        flex-direction: row;
+    }
 }
 
-@media (max-width: 331px) {
-    .titleicon {display: none;}
-    .mobilenavi {justify-content: center;}
-    .bigbutton {width: 240px;}
+/* Replace video and slideshow with large versions */
+@media (min-width: 1450px) {
+    .vid-large, .slideshow-large {
+      display: block;
+    }
+    .vid-med, .slideshow-med {
+      display: none;
+    }
 }

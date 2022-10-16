@@ -1,23 +1,21 @@
 .mobilenavi {
     position: fixed;
     top: 0;
-    min-width: 100%;
+    width: 100%;
     padding: 5px 10px 2px;
     background-color: rgb(24, 24, 24);
     border-style: solid;
     border-image: linear-gradient(to right, #1D2266, #BD54F2, #1D2266) 1 round;
     border-width: 0 0 2px 0;
-    display: none;
+    display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
     z-index: 1;
 }
 
 .titlesmall, .titlemed, .titleicon {
     flex-grow: 1000;
-}
-
-.titlesmall, .titleicon {
     display: none;
 }
 
