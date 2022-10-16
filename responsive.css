@@ -1,7 +1,7 @@
 @media (min-width: 331px) {
     .titleicon {display: block;}
     .mobilenavi {justify-content: flex-start;}
-    .bigbutton {width: 280px;}
+    .bigbutton {width: 300px;}
 }
 
 @media (min-width: 340px) {
@@ -32,7 +32,7 @@
 }
 
 /* Use longer logo in navigation */
-@media (min-width: 752px) {
+@media (min-width: 768px) {
     .titlemed {display: block;}
     .titlesmall {display: none;}
 }
@@ -61,6 +61,9 @@
         border-radius: 0px;
         margin: auto;
         padding: 20px 10px 40px 130px;
+    }
+    .html {
+        background-color: #1F1F1F;
     }
 }
 

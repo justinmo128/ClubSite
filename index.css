@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #1F1F1F;
+  background-color: #25232A;
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
@@ -43,6 +43,13 @@ a {
 
 a:visited {
   color: #c979f1
+}
+
+.desktopbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #1F1F1F;
 }
 
 .content {
@@ -153,9 +160,12 @@ a:visited {
   align-items: center;
 }
 
+.vid-small, .slideshow-small {
+  max-width: 100%;
+}
+
 .vid-med, .slideshow-med, .slideshow-large, .vid-large {
   display: none;
-  max-width: 100%;
 }
 
 .material-symbols-outlined {
