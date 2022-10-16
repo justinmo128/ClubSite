@@ -16,7 +16,6 @@
         box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
     }
     .content {
-        background-color: #1F1F1F;
         padding: 20px 10px 0px 10px;
     }
 }
@@ -62,9 +61,6 @@
         margin: auto;
         padding: 20px 10px 40px 130px;
     }
-    .html {
-        background-color: #1F1F1F;
-    }
 }
 
 /* Change video and slideshow to be shown next to each other */
@@ -81,5 +77,17 @@
     }
     .vid-med, .slideshow-med {
       display: none;
+    }
+}
+
+@media (min-width: 440px) {
+    html {
+        background: #1F1F1F url("img/bg.png");
+    }
+}
+
+@media (max-width: 439px) {
+    html {
+        background: #25232A url("img/bg-mobile.png");
     }
 }

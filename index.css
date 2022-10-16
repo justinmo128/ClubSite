@@ -5,12 +5,10 @@
 }
 
 html {
-  background-color: #25232A;
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 body {
-  color: black;
   margin: auto;
   width: 100%;
 }
@@ -49,13 +47,13 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  background-color: #1F1F1F;
+  background: inherit;
 }
 
 .content {
   min-width: 0;
   max-width: 100%;
-  background-color: #25232A;
+  background: inherit;
   color: #E6E1E5;
   margin: 70px auto 0;
   padding: 0;
@@ -68,7 +66,7 @@ a:visited {
 }
 
 .card {
-  background-color: #25232A;
+  background: #25232A;
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: none;
