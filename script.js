@@ -4,6 +4,8 @@ let menuthing = document.getElementsByClassName("menuthing");
 document.getElementById("menubutton").addEventListener("click", displayMenu)
 document.getElementById("closemenubutton").addEventListener("click", displayMenu) 
 
+displayMenu();
+
 function displayMenu() {
     if (mobileMenu.style.left == "-320px") {
         mobileMenu.style.left = "0";
