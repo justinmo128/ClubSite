@@ -82,12 +82,12 @@
 
 @media (min-width: 440px) {
     html {
-        background: #1F1F1F url("img/bg.png");
+        background: #1F1F1F url("img/bg.png") fixed;
     }
 }
 
 @media (max-width: 439px) {
     html {
-        background: #25232A url("img/bg-mobile.png");
+        background: #25232A;
     }
 }
