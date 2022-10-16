@@ -13,12 +13,16 @@
     z-index: 1;
 }
 
-.titlesmall, .titlemed {
+.titlesmall, .titlemed, .titleicon {
     flex-grow: 1000;
 }
 
-.titlesmall {
+.titlesmall, .titleicon {
     display: none;
+}
+
+.titleicon > img {
+    width: 56px;
 }
 
 .buttonsnew {

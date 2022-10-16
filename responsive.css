@@ -10,7 +10,7 @@
 
 /* Change video and slideshow to be stacked on top of each other */
 @media (max-width: 1250px) {
-    .video-highlights {
+    .slideshow {
         flex-direction: column;
     }
 }
@@ -28,7 +28,7 @@
         max-width: 100%;
         border-radius: 0px;
         margin: 70px auto 0;
-        padding: 0 10px 75px 10px;
+        padding: 20px 10px 0px 10px;
     }
 }
 
@@ -43,7 +43,7 @@
 }
 
 /* Use shortened logo in navigation */
-@media screen and (max-width: 752px) {
+@media (max-width: 752px) {
     .titlemed {display: none;}
     .titlesmall {display: block;}
 }
@@ -56,4 +56,27 @@
     .vid-small, .slideshow-small {
         display: block;
     }
+}
+
+@media (max-width: 440px) {
+    .titlesmall {display: none;}
+    .titleicon {display: block;}
+    .bigbutton {width: 320px;}
+    .card {
+        box-shadow: none;
+        padding: 0;
+    }
+    .content {
+        background-color: #25232A;
+    }
+}
+
+@media (max-width: 360px) {
+    .bigbutton {width: 280px;}
+}
+
+@media (max-width: 331px) {
+    .titleicon {display: none;}
+    .mobilenavi {justify-content: center;}
+    .bigbutton {width: 240px;}
 }
