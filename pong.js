@@ -52,7 +52,7 @@ function draw() {
     } else if (gameState === "tie") {
         bruhScreen();
     }
-    requestAnimationFrame(draw);
+    setTimeout(draw, 40/3)
 }
 
 // Key down handler
