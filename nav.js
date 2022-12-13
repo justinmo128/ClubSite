@@ -103,3 +103,10 @@ let nav = `
 </nav>`;
 
 document.write(nav)
+let desktopLinks = document.getElementById("desktopnavi").lastElementChild;
+let mobileLinks = document.getElementById("mobilenavi").lastElementChild;
+for (let i = 0; i < desktopLinks.children.length; i++) {
+    if (desktopLinks.children[i].href == window.location.pathname) {
+        console.log("Hiwahsdhj")
+    }
+}
