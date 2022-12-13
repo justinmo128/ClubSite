@@ -1,133 +1,53 @@
 <html>
-    <head>
-        <title>Item Race - Ainlay Party Video Games Club</title>
-        <!-- Main Favicons -->
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32.png">
-        <link rel="icon" type="image/png" sizes="64x64" href="img/favicon64.png">
-        <link rel="icon" type="image/png" sizes="128x128" href="img/favicon128.png">
-        <!-- For iPad -->
-        <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="img/favicon167.png">
-        <!-- For iPhone -->
-        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/favicon180.png">
-        <!-- For Android -->
-        <link rel="icon" type="image/png" sizes="48x48" href="img/favicon48.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon192.png">
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="desktopnav.css">
-        <link rel="stylesheet" href="mobilenav.css">
-        <link rel="stylesheet" href="responsive.css">
-        <link rel="stylesheet" href="scrollbar.css">
-        <link rel="stylesheet" href="itemrace.css">
-        <!-- Various icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <script src="https://kit.fontawesome.com/877ff9a971.js" crossorigin="anonymous"></script>
-        <!-- Other -->
-        <script defer src="script.js"></script>
-        <script defer src="itemrace.js"></script>
-        <script defer src="pong.js"></script>
-        <meta name="viewport" content="width=device-width">
-        <div id="closemenubox"></div>
-    </head>
-    <body>
-    <!-- MOBILE NAVIGATION -->
-    <div class="mobilenavi">
-      <div style="margin-right: 10px;">
-        <button class="hamburger mobile-navibutton" id="menubutton">
-          <span class="menuthing material-symbols-outlined">menu</span>
-        </button>
+  <head>
+    <title>Canvas Pong - Ainlay Party Video Games Club</title>
+    <!-- Main Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="img/favicon128.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="img/favicon167.png">
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/favicon180.png">
+    <!-- For Android -->
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon192.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="desktopnav.css">
+    <link rel="stylesheet" href="mobilenav.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="itemrace.css">
+    <!-- Various icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/877ff9a971.js" crossorigin="anonymous"></script>
+    <!-- Other -->
+    <script defer src="script.js"></script>
+    <script defer src="itemrace.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <div id="closemenubox"></div>
+  </head>
+  <body>
+    <script src="nav.js"></script>
+    <!-- CONTENT -->
+    <div class="top-container">
+      <div class="card">
+          <canvas id="p1score-canvas"></canvas>
       </div>
-      <div style="display: flex; align-items: center;">
-        <div class="titlemed"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-        <div class="titlesmall"><img src="img/logoimgsupersmall.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-        <div class="titleicon"><img src="img/logoiconnew.png"/></div>
+      <div>
+          <h1>Item Race</h1>
+          <p>Blue - WASD, Green - Arrow Keys</p>
+          <p>Press space to switch who moves</p>
       </div>
-      <div class="mobilemenu" id="mobilemenu">
-        <button class="hamburger mobile-navibutton" id="closemenubutton">
-          <span class="menuthing material-symbols-outlined">menu_open</span>
-        </button>
-        <a href="index.html">
-          <button class="mobile-navibutton">
-            <span class="material-symbols-outlined">home</span>Home
-          </button>
-        </a>
-        <a href="https://discord.gg/ydxYqvW5b6" target="_blank" class="navilink">
-          <button class="mobile-navibutton">
-            <span class="fa-brands fa-discord" style="font-size: 18px;"></span>Discord
-          </button>
-        </a>
-        <a href="saul.html">
-          <button class="mobile-navibutton">
-            <span class="material-symbols-outlined">groups</span>Classroom
-          </button>
-        </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
-          <button class="mobile-navibutton">
-            <span class="material-icons">list</span>Google Form
-          </button>
-        </a>
-        <a href="pong.html">
-          <button class="active mobile-navibutton">
-            <span class="material-icons">start</span>Pong
-          </button>
-        </a>
+      <div class="card">
+          <canvas id="p2score-canvas"></canvas>
       </div>
     </div>
-    <div class="desktopbox">
-      <!-- DESKTOP NAVIGATION -->
-      <div class="desktopnavi" id="desktopnavi">
-        <div><img src="img/logoiconnew.png" alt="Harry Ainlay's Party Video Games Club" style="width: 80px; margin-bottom: 10px; border-radius: 50%"/></div>
-        <div>
-          <a href="index.html" class="navilink">
-            <button class="navibutton">
-              <span class="material-symbols-outlined">home</span>
-            </button>
-            <p>Home</p>
-          </a>
-          <a href="https://discord.gg/ydxYqvW5b6" target="_blank" class="navilink">
-            <button class="navibutton">
-              <i class="fa-brands fa-discord"></i>
-            </button>
-            <p>Discord</p>
-          </a>
-          <a href="saul.html" class="navilink">
-            <button class="navibutton">
-              <span class="material-symbols-outlined">groups</span>
-            </button>
-            <p>Classroom</p>
-          </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank" class="navilink">
-            <button class="navibutton">
-              <span class="material-icons">list</span>
-            </button>
-            <p>Form</p>
-          </a>
-          <a href="pong.html" class="navilink">
-              <button class="active navibutton">
-                <span class="material-icons">start</span>
-              </button>
-              <p>Pong</p>
-          </a>
-        </div>
-      </div>
-      <!-- CONTENT -->
-      <div class="top-container">
-        <div class="card">
-            <canvas id="p1score-canvas"></canvas>
-        </div>
-        <div>
-            <h1>Item Race</h1>
-            <p>Blue - WASD, Green - Arrow Keys</p>
-            <p>Press space to switch who moves</p>
-        </div>
-        <div class="card">
-            <canvas id="p2score-canvas"></canvas>
-        </div>
-        <div class="card">
-            <canvas id="itemrace-canvas"></canvas>
-        </div>
+    <div class="card">
+        <canvas id="itemrace-canvas"></canvas>
     </div>
   </body>
 </html>
