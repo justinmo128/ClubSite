@@ -32,90 +32,100 @@
         <div id="closemenubox"></div>
     </head>
     <body>
-    <!-- MOBILE NAVIGATION -->
-    <div class="mobilenavi">
-      <div style="margin-right: 10px;">
-        <button class="hamburger mobile-navibutton" id="menubutton">
-          <span class="menuthing material-symbols-outlined">menu</span>
-        </button>
-      </div>
-      <div style="display: flex; align-items: center;">
-        <div class="titlemed"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-        <div class="titlesmall"><img src="img/logoimgsupersmall.png" alt="Harry Ainlay's Party Video Games Club"/></div>
-        <div class="titleicon"><img src="img/logoiconnew.png"/></div>
-      </div>
-      <div class="mobilemenu" id="mobilemenu">
-        <button class="hamburger mobile-navibutton" id="closemenubutton">
-          <span class="menuthing material-symbols-outlined">menu_open</span>
-        </button>
-        <a href="index.html">
-          <button class="mobile-navibutton">
-            <span class="material-symbols-outlined">home</span>Home
-          </button>
-        </a>
-        <a href="https://discord.gg/ydxYqvW5b6" target="_blank" class="navilink">
-          <button class="mobile-navibutton">
-            <span class="fa-brands fa-discord" style="font-size: 18px;"></span>Discord
-          </button>
-        </a>
-        <a href="saul.html">
-          <button class="mobile-navibutton">
-            <span class="material-symbols-outlined">groups</span>Classroom
-          </button>
-        </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
-          <button class="mobile-navibutton">
-            <span class="material-icons">list</span>Google Form
-          </button>
-        </a>
-        <a href="pong.html">
-          <button class="active mobile-navibutton">
-            <span class="material-icons">start</span>Pong
-          </button>
-        </a>
-      </div>
-    </div>
-    <div class="desktopbox">
+      <!-- MOBILE NAVIGATION -->
+      <nav class="mobilenavi">
+        <div style="margin-right: 10px;">
+            <button class="hamburger mobile-navibutton" id="menubutton">
+            <span class="menuthing material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <div class="titlemed"><img src="img/logoimg.png" alt="Harry Ainlay's Party Video Games Club"/></div>
+            <div class="titlesmall"><img src="img/logoimgsupersmall.png" alt="Harry Ainlay's Party Video Games Club"/></div>
+            <div class="titleicon"><img src="img/logoiconnew.png"/></div>
+        </div>
+        <div class="mobilemenu" id="mobilemenu">
+            <button class="hamburger mobile-navibutton" id="closemenubutton">
+                <span class="menuthing material-symbols-outlined">menu_open</span>
+            </button>
+            <a href="index.html">
+                <button class="mobile-navibutton">
+                    <span class="material-symbols-outlined">home</span>Home
+                </button>
+            </a>
+            <a href="info.html">
+                <button class="mobile-navibutton">
+                    <span class="material-symbols-outlined">info</span>Info
+                </button>
+            </a>
+            <a href="https://discord.gg/ydxYqvW5b6" target="_blank" class="navilink">
+                <button class="mobile-navibutton">
+                    <span class="fa-brands fa-discord" style="font-size: 18px;"></span>Discord
+                </button>
+            </a>
+            <a href="saul.html">
+                <button class="mobile-navibutton">
+                    <span class="material-symbols-outlined">groups</span>Classroom
+                </button>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
+                <button class="mobile-navibutton">
+                    <span class="material-icons">list</span>Google Form
+                </button>
+            </a>
+            <a href="pong.html">
+                <button class="active mobile-navibutton">
+                    <span class="material-icons">start</span>Pong (PC Only)
+                </button>
+            </a>
+        </div>
+      </nav>
+
       <!-- DESKTOP NAVIGATION -->
-      <div class="desktopnavi" id="desktopnavi">
+      <nav class="desktopnavi" id="desktopnavi">
         <div><img src="img/logoiconnew.png" alt="Harry Ainlay's Party Video Games Club" style="width: 80px; margin-bottom: 10px; border-radius: 50%"/></div>
         <div>
           <a href="index.html" class="navilink">
-            <button class="navibutton">
+              <button class="navibutton">
               <span class="material-symbols-outlined">home</span>
-            </button>
-            <p>Home</p>
+              </button>
+              <p>Home</p>
+          </a>
+          <a href="info.html" class="navilink">
+              <button class="navibutton">
+              <span class="material-symbols-outlined">info</span>
+              </button>
+              <p>Games</p>
           </a>
           <a href="https://discord.gg/ydxYqvW5b6" target="_blank" class="navilink">
-            <button class="navibutton">
+              <button class="navibutton">
               <i class="fa-brands fa-discord"></i>
-            </button>
-            <p>Discord</p>
+              </button>
+              <p>Discord</p>
           </a>
           <a href="saul.html" class="navilink">
-            <button class="navibutton">
+              <button class="navibutton">
               <span class="material-symbols-outlined">groups</span>
-            </button>
-            <p>Classroom</p>
+              </button>
+              <p>Classroom</p>
           </a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank" class="navilink">
-            <button class="navibutton">
+              <button class="navibutton">
               <span class="material-icons">list</span>
-            </button>
-            <p>Form</p>
+              </button>
+              <p>Form</p>
           </a>
           <a href="pong.html" class="navilink">
               <button class="active navibutton">
-                <span class="material-icons">start</span>
+              <span class="material-icons">start</span>
               </button>
               <p>Pong</p>
           </a>
         </div>
-      </div>
+      </nav>
       <!-- CONTENT -->
-      <div class="content"><div class="pongbox">
+      <div class="content pongbox">
         <canvas id="pong-canvas"></canvas>
-      </div></div>
-    </div>
+      </div>
   </body>
 </html>
