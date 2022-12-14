@@ -106,7 +106,7 @@ function logic() {
             moveRect2();
         }
     }
-    setTimeout(logic, 1000/50)
+    setTimeout(logic, 1000/75)
 }
 
 function drawItems() {
