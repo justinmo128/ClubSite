@@ -26,14 +26,15 @@ function startGame() {
     gameState = "gameloop"
 }
 
-function gameLoop() {
-    // Logic
+function gameDraw() {
+    drawMainComponents();
+    drawGameElements();
+}
+
+function gameLogic() {
     movePaddles();
     moveBall();
     checkScore();
-    // Drawing
-    drawMainComponents();
-    drawGameElements();
 }
 
 function drawMainComponents() {

@@ -46,13 +46,21 @@ function draw() {
     if (gameState === "start") {
         startScreen();
     } else if (gameState === "gameLoop") {
-        gameLoop();
+        gameDraw();
     } else if (gameState === "win") {
         winScreen();
     } else if (gameState === "tie") {
         bruhScreen();
     }
-    setTimeout(draw, 40/3)
+    setTimeout(draw, 1);
+}
+
+window.addEventListener("load", logic);
+function logic() {
+    if (gameState === "gameLoop") {
+        gameLogic();
+    }
+    setTimeout(logic, 40/3);
 }
 
 // Key down handler
