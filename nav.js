@@ -15,12 +15,12 @@ let nav = `
         <button class="hamburger mobile-navibutton" id="closemenubutton">
             <span class="menuthing material-symbols-outlined">menu_open</span>
         </button>
-        <a href="index.html">
+        <a href="/index.html">
             <button class="mobile-navibutton">
                 <span class="material-symbols-outlined">home</span>Home
             </button>
         </a>
-        <a href="info.html">
+        <a href="/info.html">
             <button class="mobile-navibutton">
                 <span class="material-symbols-outlined">info</span>Info
             </button>
@@ -30,7 +30,7 @@ let nav = `
                 <span class="fa-brands fa-discord" style="font-size: 18px;"></span>Discord
             </button>
         </a>
-        <a href="saul.html">
+        <a href="/saul.html">
             <button class="mobile-navibutton">
                 <span class="material-symbols-outlined">groups</span>Classroom
             </button>
@@ -40,12 +40,12 @@ let nav = `
                 <span class="material-icons">list</span>Google Form
             </button>
         </a>
-        <a href="pong.html">
+        <a href="/pong.html">
             <button class="mobile-navibutton">
                 <span class="material-icons">start</span>Pong (PC Only)
             </button>
         </a>
-        <a href="itemrace.html">
+        <a href="/itemrace.html">
             <button class="mobile-navibutton">
                 <span class="material-icons">apps</span>Item Race (PC Only)
             </button>
@@ -57,13 +57,13 @@ let nav = `
 <nav class="desktopnavi" id="desktopnavi">
     <div><img src="img/logoiconnew.png" alt="Harry Ainlay's Party Video Games Club" style="width: 80px; margin-bottom: 10px; border-radius: 50%"/></div>
     <div>
-        <a href="index.html" class="navilink">
+        <a href="/index.html" class="navilink">
             <button class="navibutton">
                 <span class="material-symbols-outlined">home</span>
             </button>
             <p>Home</p>
         </a>
-        <a href="info.html" class="navilink">
+        <a href="/info.html" class="navilink">
             <button class="navibutton">
                 <span class="material-symbols-outlined">info</span>
             </button>
@@ -75,7 +75,7 @@ let nav = `
             </button>
             <p>Discord</p>
         </a>
-        <a href="saul.html" class="navilink">
+        <a href="/saul.html" class="navilink">
             <button class="navibutton">
                 <span class="material-symbols-outlined">groups</span>
             </button>
@@ -87,13 +87,13 @@ let nav = `
             </button>
             <p>Form</p>
         </a>
-        <a href="pong.html" class="navilink">
+        <a href="/pong.html" class="navilink">
             <button class="navibutton">
                 <span class="material-icons">start</span>
             </button>
             <p>Pong</p>
         </a>
-        <a href="itemrace.html" class="navilink">
+        <a href="/itemrace.html" class="navilink">
             <button class="navibutton">
                 <span class="material-icons">apps</span>
             </button>
@@ -104,9 +104,10 @@ let nav = `
 
 document.write(nav)
 let desktopLinks = document.getElementById("desktopnavi").lastElementChild;
-let mobileLinks = document.getElementById("mobilenavi").lastElementChild;
+let mobileLinks = document.getElementById("mobilemenu");
 for (let i = 0; i < desktopLinks.children.length; i++) {
-    if (desktopLinks.children[i].href == window.location.pathname) {
-        console.log("Hiwahsdhj")
+    if (desktopLinks.children[i].getAttribute('href') == window.location.pathname) {
+        desktopLinks.children[i].firstElementChild.className = "active navibutton";
+        mobileLinks.children[i + 1].firstElementChild.className = "active mobile-navibutton";
     }
 }
