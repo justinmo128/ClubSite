@@ -45,7 +45,7 @@ function draw() {
     currentTime = performance.now();
     if (gameState === "start") {
         startScreen();
-    } else if (gameState === "gameLoop") {
+    } else if (gameState === "gameLoop" || gameState === "pause") {
         gameDraw();
     } else if (gameState === "win") {
         winScreen();

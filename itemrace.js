@@ -84,7 +84,7 @@ function draw() {
             drawP1();
             drawP2();
         }
-        if (score[0] + score[1] >= 124) {
+        if (score[0] > 62 && score[1] < 41 || score[1] > 62 && score[0] < 41 || score[0] + score[1] >= 124) {
             gameState = "end";
             setTimeout(reset, 3000)
         }
