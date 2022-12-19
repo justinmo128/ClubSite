@@ -102,6 +102,14 @@ let nav = `
     </div>
 </nav>`;
 
+let writeNav = false;
+fetch('nav.html')
+  .then(response => response.text())
+  .then((data) => {
+    nav = data;
+    writeNav = true;
+})
+
 document.write(nav)
 let desktopLinks = document.getElementById("desktopnavi").lastElementChild;
 let mobileLinks = document.getElementById("mobilemenu");
@@ -109,5 +117,8 @@ for (let i = 0; i < desktopLinks.children.length; i++) {
     if (desktopLinks.children[i].getAttribute('href') == window.location.pathname) {
         desktopLinks.children[i].firstElementChild.className = "active navibutton";
         mobileLinks.children[i + 1].firstElementChild.className = "active mobile-navibutton";
+    } else if (window.location.pathname === "/") {
+        desktopLinks.children[0].firstElementChild.className = "active navibutton";
+        mobileLinks.children[1].firstElementChild.className = "active mobile-navibutton";
     }
 }
