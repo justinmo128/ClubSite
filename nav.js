@@ -102,13 +102,13 @@ let nav = `
     </div>
 </nav>`;
 
-let writeNav = false;
-fetch('nav.html')
-  .then(response => response.text())
-  .then((data) => {
-    nav = data;
-    writeNav = true;
-})
+// let writeNav = false;
+// fetch('nav.html')
+//   .then(response => response.text())
+//   .then((data) => {
+//     nav = data;
+//     writeNav = true;
+// })
 
 document.write(nav)
 let desktopLinks = document.getElementById("desktopnavi").lastElementChild;
