@@ -30,11 +30,6 @@ let nav = `
                 <span class="fa-brands fa-discord" style="font-size: 18px;"></span>Discord
             </button>
         </a>
-        <a href="/saul.html">
-            <button class="mobile-navibutton">
-                <span class="material-symbols-outlined">groups</span>Classroom
-            </button>
-        </a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank">
             <button class="mobile-navibutton">
                 <span class="material-icons">list</span>Google Form
@@ -74,12 +69,6 @@ let nav = `
                 <i class="fa-brands fa-discord"></i>
             </button>
             <p>Discord</p>
-        </a>
-        <a href="/saul.html" class="navilink">
-            <button class="navibutton">
-                <span class="material-symbols-outlined">groups</span>
-            </button>
-            <p>Classroom</p>
         </a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc692neao5gNpTxfPnpewlATrX_OPri3YXsYG0KEozTpWDrHg/viewform?usp=sf_link" target="_blank" class="navilink">
             <button class="navibutton">
